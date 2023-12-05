@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="40dp"
+
+                android:text="@string/registro"
+
+                android:textAppearance="@style/CardView.Dark"
+                android:textSize="30.0dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+
+                android:hint="Escribe tu nombre"
+
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/apellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellidos"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/apellidostext"
+
+                android:layout_width="400dp"
+
+                android:layout_height="50dp"
+
+                android:hint="Escribe tus apellidos"
+
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/correoelectronico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico:"
+
+
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:hint="@string/correoelectronico"
+
+
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/contraseña"
+                android:layout_width="115dp"
+                android:layout_height="33dp"
+                android:text="@string/contraseña"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/textocontraseña"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Escribe tu contrasña"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/repitecontraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/repitecontraseña"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/textocontraseña2"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+
+                android:hint="Repetir la misma contraseña"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/certificado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Certificado"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/fp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" FP "></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/master"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Master"></RadioButton>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/recordar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:text="@string/recordarcontraseña"></CheckBox>
+
+            <Button
+                android:id="@+id/aceptar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aceptar"></Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

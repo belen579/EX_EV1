@@ -1,0 +1,12 @@
+<font-family xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        app:fontStyle="italic"
+        app:fontWeight="500"
+
+         android:textStyle="bold"
+
+        app:font="@font/my_font"
+        tools:ignore="ResourceCycle" />
+</font-family>

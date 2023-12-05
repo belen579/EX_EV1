@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EX_EV1</string>
+
+
+    <string name="registro">Registro Usuario</string>
+    <string name="nombre">Nombre</string>
+
+    <string name="correoelectronico">Correo Electronico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="repitecontraseña">Repite Contraseña</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="recordarcontraseña">Recordar contraseña</string>
+    <string name="si">si</string>
+    <string name="Validado">Validado</string>
+    <string name="Confirmacion">Confirmacion</string>
+    <string name="Desea_validar">Desea validar</string>
+    <string name="no">no</string>
+    <string name="cancelado">Registro cancelado</string>
+</resources>
