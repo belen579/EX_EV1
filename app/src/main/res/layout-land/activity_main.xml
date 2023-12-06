@@ -26,8 +26,8 @@
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="208dp"
-        android:layout_height="44dp"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
 
         android:layout_marginStart="50dp"
 
@@ -154,6 +154,7 @@
         android:layout_height="80dp"
         android:layout_marginStart="350dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/aceptar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/repitecontraseña">
 
@@ -194,32 +195,30 @@
 
     <Button
         android:id="@+id/aceptar"
-        android:layout_width="104dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="600dp"
-        android:layout_marginTop="73dp"
+        android:layout_width="176dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="510dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="90dp"
         android:text="@string/aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.456"></Button>
+        app:layout_constraintVertical_bias="0.58"></Button>
 
     <CheckBox
         android:id="@+id/recordar"
         android:layout_width="176dp"
         android:layout_height="56dp"
-        android:layout_marginStart="372dp"
+        android:layout_marginStart="330dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:text="@string/recordarcontraseña"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/fp"
-        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/repitecontraseña"
         app:layout_constraintVertical_bias="0.626"></CheckBox>
