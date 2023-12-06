@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/nombre"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="208dp"
+        android:layout_height="44dp"
+
+        android:layout_marginStart="50dp"
+
+        android:layout_marginTop="3dp"
+        android:hint="Escribe tu nombre"
+
+
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/apellidos"
+        android:layout_width="67dp"
+        android:layout_height="37dp"
+
+
+        android:layout_marginStart="50dp"
+        android:text="Apellidos"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/apellidostext"
+
+        android:layout_width="200dp"
+
+        android:layout_height="50dp"
+
+        android:layout_marginStart="50dp"
+
+        android:hint="Escribe tus apellidos"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidos"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/correoelectronico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+
+
+        android:text="Correo electrónico:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidostext"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+
+
+        android:hint="@string/correoelectronico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoelectronico"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/contraseña"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="356dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/contraseña"
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textocontraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/textocontraseña"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_weight="1"
+        android:hint="Escribe tu contrasña"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/contraseña"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repitecontraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/repitecontraseña"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/apellidostext"
+        app:layout_constraintTop_toBottomOf="@+id/textocontraseña"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/textocontraseña2"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:hint="Repetir la misma contraseña"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toEndOf="@+id/repitecontraseña"
+        app:layout_constraintTop_toBottomOf="@+id/textocontraseña"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+
+        android:id="@+id/radioGroup"
+        android:layout_width="397dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="350dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/repitecontraseña">
+
+
+        <RadioButton
+            android:id="@+id/master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Master"
+            app:layout_constraintTop_toBottomOf="@+id/textocontraseña2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="522dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/certificado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Certificado"
+            app:layout_constraintTop_toBottomOf="@+id/textocontraseña2"
+
+            tools:layout_editor_absoluteX="600dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/fp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="FP"
+            app:layout_constraintTop_toBottomOf="@+id/textocontraseña2"
+
+            tools:layout_editor_absoluteX="600dp"></RadioButton>
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="600dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/aceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.456"></Button>
+
+    <CheckBox
+        android:id="@+id/recordar"
+        android:layout_width="176dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/recordarcontraseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repitecontraseña"
+        app:layout_constraintVertical_bias="0.626"></CheckBox>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

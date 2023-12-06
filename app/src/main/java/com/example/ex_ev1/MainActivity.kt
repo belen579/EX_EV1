@@ -40,14 +40,14 @@ class MainActivity : AppCompatActivity() {
             if (binding.fp.isChecked) {
                 formulario.titulo = binding.fp.text.toString()
 
-                showalert(formulario)
+               showalert(formulario)
 
 
-                //    val intent = Intent(this, MainActivity2::class.java);
-                //     intent.putExtra("Formulario", "Datos del alumno :\n $formulario")
+               /*     val intent = Intent(this, MainActivity2::class.java);
+                    intent.putExtra("Formulario", "Datos del alumno :\n $formulario")
 
 
-                // startActivity(intent)
+                startActivity(intent)*/
             }
 
 
@@ -58,18 +58,18 @@ class MainActivity : AppCompatActivity() {
 
                 showalert(formulario)
 
-              /*  val intent = Intent(this, MainActivity2::class.java);
+            /*    val intent = Intent(this, MainActivity2::class.java);
                 intent.putExtra("Formulario", "Datos del alumno :  \n $formulario")
-                startActivity(intent)*/
-
+                startActivity(intent)
+*/
             }
             if (binding.master.isChecked) {
 
-                formulario!!.titulo = binding.master.text.toString()
+                formulario.titulo = binding.master.text.toString()
 
                 showalert(formulario)
 
-                /*  val intent = Intent(this, MainActivity2::class.java);
+          /*       val intent = Intent(this, MainActivity2::class.java);
 
                 intent.putExtra(
                     "Formulario", "Datos del alumno :" +
