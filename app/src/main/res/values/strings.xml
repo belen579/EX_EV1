@@ -16,4 +16,11 @@
     <string name="Desea_validar">Desea validar</string>
     <string name="no">no</string>
     <string name="cancelado">Registro cancelado</string>
+    <string name="Acerca_de">Acerca de la aplicación</string>
+    <string name="Inicio_app">Inicio App</string>
+    <string name="Acceder_Formulario">Acceder al Formulario</string>
+    <string name="share_action">Compartir</string>
+    <string name="Acceder_a_la_web">Acceder a la Web</string>
+    <string name="borrar">Borrar</string>
+    <string name="calculadora">Acceder a Calculadora</string>
 </resources>

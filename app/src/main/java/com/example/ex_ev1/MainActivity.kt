@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ex_ev1.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -78,6 +79,26 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)*/
 
             }
+
+        }
+
+        binding.btnborrar?.setOnClickListener(){
+
+            binding.editTextName.text=null
+
+            binding.apellidostext.text=null
+            binding.editTextEmail.text=null
+            binding.textocontraseA.text=null
+            binding.textocontraseA2.text=null
+
+
+            binding.certificado.isChecked= false
+            binding.fp.isChecked= false
+            binding.master.isChecked= false
+
+            binding.recordar.isChecked = false
+
+            Snackbar.make(binding.btnborrar!!, "Datos Borrados", Snackbar.LENGTH_SHORT).show()
 
         }
 
