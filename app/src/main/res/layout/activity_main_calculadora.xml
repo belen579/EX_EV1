@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityCalculadora">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="1"
+        app:layout_constraintGuide_begin="304dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.9"
+        app:layout_constraintGuide_begin="304dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.8"
+        app:layout_constraintGuide_begin="304dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.7"
+        app:layout_constraintGuide_begin="304dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.6"
+        app:layout_constraintGuide_begin="304dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintGuide_begin="304dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.3" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0"
+        app:layout_constraintGuide_begin="304dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.25"
+        app:layout_constraintGuide_begin="304dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintGuide_begin="304dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.75"
+        app:layout_constraintGuide_begin="304dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_percent="1"
+        app:layout_constraintGuide_begin="304dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btcero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btcero"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintBottom_toTopOf="@id/gh1"
+        app:layout_constraintTop_toBottomOf="@id/gh2"
+        app:layout_constraintEnd_toStartOf="@id/gv3"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btcoma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btncomma"
+        android:layout_marginStart="4dp"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv3"
+        app:layout_constraintBottom_toTopOf="@id/gh1"
+        app:layout_constraintTop_toBottomOf="@id/gh2"
+        app:layout_constraintEnd_toStartOf="@id/gv4"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btigual"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btnigual"
+        android:layout_marginStart="4dp"
+        style="@style/SymbolButton"
+        app:layout_constraintStart_toEndOf="@id/gv4"
+        app:layout_constraintBottom_toTopOf="@id/gh1"
+        app:layout_constraintTop_toBottomOf="@id/gh2"
+        app:layout_constraintEnd_toStartOf="@id/gv5"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btuno"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btone"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintBottom_toTopOf="@id/gh2"
+        app:layout_constraintTop_toBottomOf="@id/gh3"
+        app:layout_constraintEnd_toStartOf="@id/gv2"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btdos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btwo"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv2"
+        app:layout_constraintBottom_toTopOf="@id/gh2"
+        app:layout_constraintTop_toBottomOf="@id/gh3"
+        app:layout_constraintEnd_toStartOf="@id/gv3"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bttres"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btthree"
+        android:layout_marginStart="4dp"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv3"
+        app:layout_constraintBottom_toTopOf="@id/gh2"
+        app:layout_constraintTop_toBottomOf="@id/gh3"
+        app:layout_constraintEnd_toStartOf="@id/gv4"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btplus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+
+        android:text="@string/btnsuma"
+        style="@style/SymbolButton"
+        app:layout_constraintStart_toEndOf="@id/gv4"
+        app:layout_constraintBottom_toTopOf="@id/gh2"
+        app:layout_constraintTop_toBottomOf="@id/gh3"
+        app:layout_constraintEnd_toStartOf="@id/gv5"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btcuatro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btfour"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintBottom_toTopOf="@id/gh3"
+        app:layout_constraintTop_toBottomOf="@id/gh4"
+        app:layout_constraintEnd_toStartOf="@id/gv2"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btcinco"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btfive"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv2"
+        app:layout_constraintBottom_toTopOf="@id/gh3"
+        app:layout_constraintTop_toBottomOf="@id/gh4"
+        app:layout_constraintEnd_toStartOf="@id/gv3"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btseis"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btsix"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv3"
+        app:layout_constraintBottom_toTopOf="@id/gh3"
+        app:layout_constraintTop_toBottomOf="@id/gh4"
+        app:layout_constraintEnd_toStartOf="@id/gv4"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btmenos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btnresta"
+        style="@style/SymbolButton"
+        app:layout_constraintStart_toEndOf="@id/gv4"
+        app:layout_constraintBottom_toTopOf="@id/gh3"
+        app:layout_constraintTop_toBottomOf="@id/gh4"
+        app:layout_constraintEnd_toStartOf="@id/gv5"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btsiete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btseven"
+        style="@style/numberButton"
+
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintBottom_toTopOf="@id/gh4"
+        app:layout_constraintTop_toBottomOf="@id/gh5"
+        app:layout_constraintEnd_toStartOf="@id/gv2"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btocho"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/bteight"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv2"
+        app:layout_constraintBottom_toTopOf="@id/gh4"
+        app:layout_constraintTop_toBottomOf="@id/gh5"
+        app:layout_constraintEnd_toStartOf="@id/gv3"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnueve"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btnine"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv3"
+        app:layout_constraintBottom_toTopOf="@id/gh4"
+        app:layout_constraintTop_toBottomOf="@id/gh5"
+        app:layout_constraintEnd_toStartOf="@id/gv4"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btmul"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btnmulti"
+        style="@style/SymbolButton"
+        app:layout_constraintStart_toEndOf="@id/gv4"
+        app:layout_constraintBottom_toTopOf="@id/gh4"
+        app:layout_constraintTop_toBottomOf="@id/gh5"
+        app:layout_constraintEnd_toStartOf="@id/gv5"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btclear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btnclear"
+        style="@style/numberButton"
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintBottom_toTopOf="@id/gh5"
+        app:layout_constraintTop_toBottomOf="@id/gh6"
+        app:layout_constraintEnd_toStartOf="@id/gv4"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btdiv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/btndiv"
+        style="@style/SymbolButton"
+        app:layout_constraintStart_toEndOf="@id/gv4"
+        app:layout_constraintBottom_toTopOf="@id/gh5"
+        app:layout_constraintTop_toBottomOf="@id/gh6"
+        app:layout_constraintEnd_toStartOf="@id/gv5"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/screen"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+         app:layout_constraintBottom_toTopOf="@+id/gh6"
+        app:layout_constraintEnd_toStartOf="@id/gv5"
+
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintTop_toBottomOf="@id/gh7"
+        android:text="@string/btcero"
+        android:gravity="center|end"
+        style="@style/Screemnumber"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

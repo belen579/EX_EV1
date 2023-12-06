@@ -23,4 +23,28 @@
     <string name="Acceder_a_la_web">Acceder a la Web</string>
     <string name="borrar">Borrar</string>
     <string name="calculadora">Acceder a Calculadora</string>
+
+
+
+    //
+
+    <string name="btcero">0</string>
+    <string name="btone">1</string>
+    <string name="btwo">2</string>
+    <string name="btthree">3</string>
+    <string name="btfour">4</string>
+    <string name="btfive">5</string>
+    <string name="btsix">6</string>
+    <string name="btseven">7</string>
+    <string name="bteight">8</string>
+    <string name="btnine">9</string>
+    <string name="btnclear">Clear</string>
+
+    <string name="btnsuma">+</string>
+    <string name="btnresta">-</string>
+    <string name="btnmulti">*</string>
+    <string name="btndiv">/</string>
+    <string name="btncomma">,</string>
+    <string name="btnigual">=</string>
+
 </resources>

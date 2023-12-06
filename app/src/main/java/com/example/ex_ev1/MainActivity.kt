@@ -103,6 +103,13 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        binding.calculardora?.setOnClickListener(){
+            val intent = Intent(this, MainActivityCalculadora::class.java);
+
+            startActivity(intent)
+        }
+
+
     }
 
     data class Formulario(
