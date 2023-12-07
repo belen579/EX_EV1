@@ -44,7 +44,7 @@
     <string name="btnresta">-</string>
     <string name="btnmulti">*</string>
     <string name="btndiv">/</string>
-    <string name="btncomma">,</string>
+    <string name="btncomma">.</string>
     <string name="btnigual">=</string>
 
 </resources>
