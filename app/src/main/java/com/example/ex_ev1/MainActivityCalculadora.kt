@@ -6,7 +6,7 @@ import android.view.View
 import com.example.ex_ev1.databinding.ActivityMainCalculadoraBinding
 
 
-class MainActivityCalculadora : AppCompatActivity() {
+class MainActivityCalculadora : AppCompatActivity(), View.OnClickListener {
 
     private var firstnumber = 0.0
     private var secondnumbre = 0.0
@@ -24,67 +24,45 @@ class MainActivityCalculadora : AppCompatActivity() {
 
 
 
-        binding.btcero?.setOnClickListener() {
+        binding.btcero?.setOnClickListener(this)
+        binding.btuno?.setOnClickListener(this)
+        binding.btdos?.setOnClickListener(this)
+        binding.bttres?.setOnClickListener(this)
+        binding.btcuatro?.setOnClickListener(this)
+        binding.btcinco?.setOnClickListener(this)
+        binding.btseis?.setOnClickListener(this)
+        binding.btsiete?.setOnClickListener(this)
+        binding.btocho?.setOnClickListener(this)
+        binding.btnueve.setOnClickListener(this)
+        binding.btcoma.setOnClickListener(this)
+        binding.btmul.setOnClickListener(this)
 
 
-        }
-        binding.btuno?.setOnClickListener() {
-            colocarnumeros(binding.btuno!!.text.toString())
-        }
-        binding.btdos?.setOnClickListener() {
-            colocarnumeros(binding.btdos!!.text.toString())
-        }
-        binding.bttres?.setOnClickListener() {
-            colocarnumeros(binding.bttres!!.text.toString())
-        }
-        binding.btcuatro?.setOnClickListener() {
-            colocarnumeros(binding.btcuatro!!.text.toString())
-        }
-        binding.btcinco?.setOnClickListener() {
-            colocarnumeros(binding.btcinco!!.text.toString())
-        }
-        binding.btseis.setOnClickListener() {
-            colocarnumeros(binding.btseis!!.text.toString())
-        }
-        binding.btsiete.setOnClickListener() {
-            colocarnumeros(binding.btsiete!!.text.toString())
-        }
-        binding.btocho.setOnClickListener() {
-            colocarnumeros(binding.btocho!!.text.toString())
-        }
-        binding.btnueve.setOnClickListener() {
-            colocarnumeros(binding.btnueve!!.text.toString())
-        }
-        binding.btcoma.setOnClickListener() {
-            colocarnumeros(binding.btcoma!!.text.toString())
-        }
-        binding.btmul.setOnClickListener() {
-            colocarnumeros(binding.btmul!!.text.toString())
-        }
-        binding.btdiv.setOnClickListener() {
-            colocarnumeros(binding.btdiv!!.text.toString())
-        }
-        binding.btmenos.setOnClickListener() {
-            colocarnumeros(binding.btmenos!!.text.toString())
-        }
-        binding.btclear.setOnClickListener() {
-            colocarnumeros(binding.btclear!!.text.toString())
-        }
+        binding.btdiv.setOnClickListener(this)
 
-        binding.btplus.setOnClickListener() {
-            colocarnumeros(binding.btplus!!.text.toString())
-        }
 
-        binding.btigual.setOnClickListener() {
+        binding.btmenos.setOnClickListener(this)
+
+
+        binding.btclear.setOnClickListener(this)
+
+
+
+        binding.btplus.setOnClickListener(this)
+
+
+
+        binding.btigual.setOnClickListener(this)
+
             // colocarnumeros( binding.btplus!!.text.toString())
 
             // onequalpressed()
-        }
 
-        onClick(binding.btigual)
+
+
     }
 
-        fun onClick(view: View) {
+        override fun onClick(view: View) {
             when (view) {
 
                 binding.btcero -> numeropresionado("0")
@@ -101,9 +79,10 @@ class MainActivityCalculadora : AppCompatActivity() {
                 binding.btmul ->onOperationPressed("*")
                 binding.btdiv -> onOperationPressed("/")
                 binding.btmenos -> onOperationPressed("-")
-                binding.btclear -> numeropresionado("")
-                binding.btplus ->onOperationPressed("*")
+
+                binding.btplus ->onOperationPressed("+")
                 binding.btigual-> onequalpressed()
+                binding.btclear -> binding.screen.text= " "
             }
         }
 
@@ -144,10 +123,10 @@ class MainActivityCalculadora : AppCompatActivity() {
 
     private fun onequalpressed(){
 
-        val resultado:Double = when(operation){
+        val resultado= when(operation){
             "+" -> firstnumber + secondnumbre
             "-" -> firstnumber - secondnumbre
-            "x" -> firstnumber * secondnumbre
+            "*" -> firstnumber * secondnumbre
             "/" -> firstnumber / secondnumbre
             else -> 0.0
         }
@@ -163,4 +142,6 @@ class MainActivityCalculadora : AppCompatActivity() {
 
     }
 }
+
+
 
