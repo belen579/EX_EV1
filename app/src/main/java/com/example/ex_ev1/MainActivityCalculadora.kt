@@ -42,6 +42,7 @@ class MainActivityCalculadora : AppCompatActivity(){
 
     }
 
+
     private fun numeropresionado(number: String) {
 
         colocarnumeros(number)
