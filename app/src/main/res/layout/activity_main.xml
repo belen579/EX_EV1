@@ -133,7 +133,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/textocontraseña"
+                android:id="@+id/textocon"
                 android:layout_width="240dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"

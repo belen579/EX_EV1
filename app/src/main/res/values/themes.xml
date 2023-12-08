@@ -5,6 +5,14 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="LetterButton">
+        <item name="android:background">#DBDDDB</item>
+        <item name="android:textColor">@color/black</item>
+        <item name = "android:text">Bold</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
 
     <style name="numberButton">
         <item name="android:background">#DBDDDB</item>

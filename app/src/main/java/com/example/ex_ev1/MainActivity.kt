@@ -29,16 +29,17 @@ class MainActivity : AppCompatActivity() {
 
         var formulario: Formulario;
         formulario = Formulario(nombre, apellidos, email, contraseña, titulo)
-        formulario.nombre = binding.editTextName.text.toString()
-        formulario.apellidos = binding.apellidostext.text.toString()
-        formulario.email = binding.editTextEmail.text.toString()
-        formulario.contraseña = binding.editTextEmail.text.toString()
+
 
 
 
         binding.aceptar.setOnClickListener() {
 
             if (binding.fp.isChecked) {
+                formulario.nombre = binding.editTextName.text.toString()
+                formulario.apellidos = binding.apellidostext.text.toString()
+                formulario.email = binding.editTextEmail.text.toString()
+                formulario.contraseña = binding.textocon?.text.toString()
                 formulario.titulo = binding.fp.text.toString()
 
                showalert(formulario)
@@ -54,6 +55,10 @@ class MainActivity : AppCompatActivity() {
 
 
             if (binding.certificado.isChecked) {
+                formulario.nombre = binding.editTextName.text.toString()
+                formulario.apellidos = binding.apellidostext.text.toString()
+                formulario.email = binding.editTextEmail.text.toString()
+                formulario.contraseña = binding.textocon?.text.toString()
 
                 formulario.titulo = binding.certificado.text.toString()
 
@@ -65,6 +70,11 @@ class MainActivity : AppCompatActivity() {
 */
             }
             if (binding.master.isChecked) {
+
+                formulario.nombre = binding.editTextName.text.toString()
+                formulario.apellidos = binding.apellidostext.text.toString()
+                formulario.email = binding.editTextEmail.text.toString()
+                formulario.contraseña = binding.textocon?.text.toString()
 
                 formulario.titulo = binding.master.text.toString()
 
@@ -88,7 +98,7 @@ class MainActivity : AppCompatActivity() {
 
             binding.apellidostext.text=null
             binding.editTextEmail.text=null
-            binding.textocontraseA.text=null
+            binding.textocon?.text=null
             binding.textocontraseA2.text=null
 
 
@@ -121,7 +131,7 @@ class MainActivity : AppCompatActivity() {
     ) {
 
         override fun toString(): String {
-            return "Nombre: $nombre , \n Apellidos: $apellidos,\n email: $email, \n contraseña :$contraseña \n Titulo: $titulo"
+            return "Nombre: $nombre \n Apellidos:$apellidos\n email: $email \n contraseña:$contraseña \n Titulo: $titulo"
         }
 
 
@@ -140,7 +150,7 @@ class MainActivity : AppCompatActivity() {
 
 
             val intent = Intent(this, MainActivity2::class.java);
-            intent.putExtra("Formulario", "Datos del alumnos $formulario ")
+            intent.putExtra("Formulario", "Datos del alumno \n $formulario ")
             startActivity(intent)
 
 
