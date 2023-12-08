@@ -7,6 +7,7 @@ import android.provider.Settings.Global.getString
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+
 import com.example.ex_ev1.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 
@@ -133,18 +134,11 @@ class MainActivity : AppCompatActivity() {
 
 
     ) {
-
-
         override fun toString(): String {
-
 
 
             return "- $nombre \n -$apellidos\n - $email \n - $contraseña \n - $titulo"
         }
-
-
-
-
 
     }
 
