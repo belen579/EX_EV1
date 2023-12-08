@@ -1,50 +1,56 @@
 <resources>
-    <string name="app_name">Formulario</string>
+    <string name="app_name" translatable="true">Formulario</string>
 
 
-    <string name="registro">Registro Usuario</string>
-    <string name="nombre">Nombre</string>
+    <string name="registro" translatable="true">Registro Usuario</string>
+    <string name="nombre" translatable="true">Nombre</string>
 
-    <string name="correoelectronico">Correo Electronico</string>
-    <string name="contraseña">Contraseña</string>
-    <string name="repitecontraseña">Repite Contraseña</string>
-    <string name="aceptar">Aceptar</string>
-    <string name="recordarcontraseña">Recordar contraseña</string>
-    <string name="si">si</string>
-    <string name="Validado">Validado</string>
-    <string name="Confirmacion">Confirmacion</string>
-    <string name="Desea_validar">Desea validar</string>
-    <string name="no">no</string>
-    <string name="cancelado">Registro cancelado</string>
-    <string name="Acerca_de">Acerca de la aplicación</string>
-    <string name="Inicio_app">Inicio App</string>
-    <string name="Acceder_Formulario">Acceder al Formulario</string>
-    <string name="share_action">Compartir</string>
-    <string name="Acceder_a_la_web">Acceder a la Web</string>
-    <string name="borrar">Borrar</string>
-    <string name="calculadora">Acceder a Calculadora</string>
-
+    <string name="correoelectronico" translatable="true">Correo Electronico</string>
+    <string name="contraseña" translatable="true">Contraseña</string>
+    <string name="repitecontraseña" translatable="true">Repite Contraseña</string>
+    <string name="aceptar" translatable="true">Aceptar</string>
+    <string name="recordarcontraseña" translatable="true">Recordar contraseña</string>
+    <string name="si" translatable="true">si</string>
+    <string name="Validado" translatable="true">Validado</string>
+    <string name="Confirmacion" translatable="true">Confirmacion</string>
+    <string name="Desea_validar" translatable="true">Desea validar</string>
+    <string name="no" translatable="true">no</string>
+    <string name="cancelado" translatable="true">Registro cancelado</string>
+    <string name="Acerca_de" translatable="true">Acerca de la aplicación</string>
+    <string name="Inicio_app" translatable="true">Inicio App</string>
+    <string name="Acceder_Formulario" translatable="true">Acceder al Formulario</string>
+    <string name="share_action" translatable="true">Compartir</string>
+    <string name="Acceder_a_la_web" translatable="true">Acceder a la Web</string>
+    <string name="borrar" translatable="true">Borrar</string>
+    <string name="calculadora" translatable="true">Acceder a Calculadora</string>
+    <string name="apellidos" translatable="true">Apellidos</string>
+    <string name= "escribe_apellidos">Escribe tus Apellidos</string>
+    <string name= "titulo">Titulo</string>
 
 
     //
 
-    <string name="btcero">0</string>
-    <string name="btone">1</string>
-    <string name="btwo">2</string>
-    <string name="btthree">3</string>
-    <string name="btfour">4</string>
-    <string name="btfive">5</string>
-    <string name="btsix">6</string>
-    <string name="btseven">7</string>
-    <string name="bteight">8</string>
-    <string name="btnine">9</string>
-    <string name="btnclear">Clear</string>
+    <string name="btcero" translatable="false">0</string>
+    <string name="btone" translatable="false">1</string>
+    <string name="btwo" translatable="false">2</string>
+    <string name="btthree" translatable="false">3</string>
+    <string name="btfour" translatable="false">4</string>
+    <string name="btfive" translatable="false">5</string>
+    <string name="btsix" translatable="false">6</string>
+    <string name="btseven" translatable="false">7</string>
+    <string name="bteight" translatable="false">8</string>
+    <string name="btnine" translatable="false">9</string>
+    <string name="btnclear" translatable="false">Clear</string>
 
-    <string name="btnsuma">+</string>
-    <string name="btnresta">-</string>
-    <string name="btnmulti">*</string>
-    <string name="btndiv">/</string>
-    <string name="btncomma">.</string>
-    <string name="btnigual">=</string>
+    <string name="btnsuma" translatable="false">+</string>
+    <string name="btnresta" translatable="false">-</string>
+    <string name="btnmulti" translatable="false">*</string>
+    <string name="btndiv" translatable="false">/</string>
+    <string name="btncomma" translatable="false">.</string>
+    <string name="btnigual" translatable="false">=</string>
+    <string name="Certificado">Certificado</string>
+    <string name="string_fp">FP</string>
+    <string name="Datosdelalumno"  translatable="true">Datos del alumno</string>
+
 
 </resources>

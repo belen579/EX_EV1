@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="true">Formulary</string>
+
+
+    <string name="registro" translatable="true">User Registration</string>
+    <string name="nombre" translatable="true">Name</string>
+
+    <string name="correoelectronico" translatable="true">Email</string>
+    <string name="contraseña" translatable="true">Password</string>
+    <string name="repitecontraseña" translatable="true">Repit Password</string>
+    <string name="aceptar" translatable="true">Accept</string>
+    <string name="recordarcontraseña" translatable="true">Remember Password</string>
+    <string name="si" translatable="true">yes</string>
+    <string name="Validado" translatable="true">Validated</string>
+    <string name="Confirmacion" translatable="true">Confirmation</string>
+    <string name="Desea_validar" translatable="true">¿Do you want to validate?</string>
+    <string name="no" translatable="true">no</string>
+    <string name="cancelado" translatable="true">Canceled Register</string>
+    <string name="Acerca_de" translatable="true">More About Aplication</string>
+    <string name="Inicio_app" translatable="true">Start App</string>
+    <string name="Acceder_Formulario" translatable="true">Access the formulary</string>
+    <string name="share_action" translatable="true">Share</string>
+    <string name="Acceder_a_la_web" translatable="true">Access the Web</string>
+    <string name="borrar" translatable="true">Delete</string>
+    <string name="calculadora" translatable="true">Access the Calculator</string>
+    <string name="apellidos" translatable="true">Surname</string>
+    <string name="Certificado">Certificate</string>
+    <string name="string_fp">FP</string>
+    <string name= "escribe_apellidos">Write your Lastname</string>
+    <string name= "titulo">Qualification</string>
+    <string name="Datosdelalumno"  translatable="true">Student Data</string>
+</resources>

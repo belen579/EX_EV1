@@ -64,7 +64,7 @@
                 android:layout_height="50dp"
                 android:editable="true"
 
-                android:hint="Escribe tu nombre"
+                android:hint="@string/nombre"
 
                 android:inputType="text" />
         </LinearLayout>
@@ -79,7 +79,7 @@
                 android:id="@+id/apellidos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apellidos"
+                android:text="@string/apellidos"
                 android:textSize="16sp" />
 
             <EditText
@@ -89,7 +89,7 @@
 
                 android:layout_height="50dp"
 
-                android:hint="Escribe tus apellidos"
+                android:hint="@string/escribe_apellidos"
 
                 android:inputType="textEmailAddress" />
         </LinearLayout>
@@ -104,7 +104,7 @@
                 android:id="@+id/correoelectronico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Correo electrónico:"
+                android:text="@string/correoelectronico"
 
 
                 android:textSize="16sp" />
@@ -137,7 +137,7 @@
                 android:layout_width="240dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:hint="Escribe tu contrasña"
+                android:hint="@string/contraseña"
                 android:inputType="textEmailAddress" />
         </LinearLayout>
 
@@ -159,7 +159,7 @@
                 android:layout_width="240dp"
                 android:layout_height="50dp"
 
-                android:hint="Repetir la misma contraseña"
+                android:hint="@string/repitecontraseña"
                 android:inputType="textEmailAddress" />
         </LinearLayout>
 
@@ -180,13 +180,13 @@
                     android:id="@+id/certificado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Certificado"></RadioButton>
+                    android:text="@string/Certificado"></RadioButton>
 
                 <RadioButton
                     android:id="@+id/fp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" FP "></RadioButton>
+                    android:text="@string/string_fp"></RadioButton>
 
                 <RadioButton
                     android:id="@+id/master"

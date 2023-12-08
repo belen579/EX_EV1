@@ -8,21 +8,40 @@
 
 
     <TextView
+        android:id="@+id/textadatos"
+        style="@style/LetterButton"
+        android:layout_width="217dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="42dp"
+        android:text="@string/Datosdelalumno"
+        app:layout_constraintBottom_toTopOf="@+id/finaltextview"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="50dp"></TextView>
+
+    <TextView
 
         android:id="@+id/finaltextview"
         style="@style/LetterButton"
-        android:layout_width="373dp"
+        android:layout_width="361dp"
 
 
-        android:layout_height="262dp"
+        android:layout_height="234dp"
 
-        android:layout_marginBottom="400dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="300dp"
         android:text="hola"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.398"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintVertical_bias="0.484">
 
 

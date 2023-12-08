@@ -1,7 +1,9 @@
 package com.example.ex_ev1
 
 import android.content.Intent
+import android.content.res.Resources
 import android.os.Bundle
+import android.provider.Settings.Global.getString
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -128,11 +130,20 @@ class MainActivity : AppCompatActivity() {
         var email: String?,
         var contraseña: String?,
         var titulo: String?
+
+
     ) {
 
+
         override fun toString(): String {
-            return "Nombre: $nombre \n Apellidos:$apellidos\n email: $email \n contraseña:$contraseña \n Titulo: $titulo"
+
+
+
+            return "- $nombre \n -$apellidos\n - $email \n - $contraseña \n - $titulo"
         }
+
+
+
 
 
     }
@@ -141,8 +152,10 @@ class MainActivity : AppCompatActivity() {
 
         val alert = AlertDialog.Builder(this)
 
-        alert.setTitle("confirmacion")
-        alert.setMessage("¿Desea validar los datos?")
+        alert.setTitle(R.string.Confirmacion)
+        alert.setMessage(R.string.Desea_validar)
+
+
 
         alert.setPositiveButton(R.string.si) { dialog, which ->
             var toast = Toast.makeText(this, R.string.Validado, Toast.LENGTH_SHORT)
@@ -150,7 +163,7 @@ class MainActivity : AppCompatActivity() {
 
 
             val intent = Intent(this, MainActivity2::class.java);
-            intent.putExtra("Formulario", "Datos del alumno \n $formulario ")
+            intent.putExtra("Formulario",  "Data : \n $formulario ")
             startActivity(intent)
 
 
