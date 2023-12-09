@@ -8,7 +8,6 @@
 
 
     <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -137,11 +136,13 @@
                 android:layout_width="240dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+
                 android:hint="@string/contraseña"
                 android:inputType="textEmailAddress" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/repitecontraseña2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -151,16 +152,36 @@
                 android:id="@+id/repitecontraseña"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
+
                 android:text="@string/repitecontraseña"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintVertical_bias="0.5"/>
 
-            <EditText
-                android:id="@+id/textocontraseña2"
-                android:layout_width="240dp"
-                android:layout_height="50dp"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_user_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/contraseña"
 
-                android:hint="@string/repitecontraseña"
-                android:inputType="textEmailAddress" />
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:layout_constraintVertical_bias="0.5"
+
+                app:layout_constraintEnd_toEndOf="parent"
+
+               >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:hint="@string/contraseña"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout> />
         </LinearLayout>
 
 
@@ -220,6 +241,7 @@
 
 
         <LinearLayout
+
             android:id="@+id/botones"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -243,7 +265,30 @@
 
 
 
+
+
+
+
+        <Switch
+            android:id="@+id/round_up_switch"
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/Acepta_politica"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/botones"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+
+
+
     </LinearLayout>
+
+
+
+
 
     </ScrollView>
 

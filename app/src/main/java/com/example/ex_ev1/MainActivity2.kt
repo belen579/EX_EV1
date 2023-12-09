@@ -13,9 +13,12 @@ class MainActivity2 : AppCompatActivity() {
 
 
         val intent = intent
-        val textorecibido = intent.getStringExtra("Formulario")
+        val textorecibido = intent?.getSerializableExtra("Formulario")as? MainActivity.Formulario
 
         val textView = findViewById<TextView>(R.id.finaltextview)
-        textView.text=textorecibido
+        if (textorecibido != null) {
+            textView.text="Nombre :"+textorecibido.nombre.toString() +"\n" + "Apellidos :"+ textorecibido.apellidos.toString()+"\n"+ "Email :"+ textorecibido.email.toString()+"\n"+
+                    "Contraseña :" +textorecibido.contraseña.toString()+"\n" +"Titulo :" +textorecibido.titulo.toString()
+        }
     }
 }

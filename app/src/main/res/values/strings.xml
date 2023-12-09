@@ -13,7 +13,7 @@
     <string name="si" translatable="true">si</string>
     <string name="Validado" translatable="true">Validado</string>
     <string name="Confirmacion" translatable="true">Confirmacion</string>
-    <string name="Desea_validar" translatable="true">Desea validar</string>
+    <string name="Desea_validar" translatable="true">¿Desea validar el formulario?</string>
     <string name="no" translatable="true">no</string>
     <string name="cancelado" translatable="true">Registro cancelado</string>
     <string name="Acerca_de" translatable="true">Acerca de la aplicación</string>
@@ -51,6 +51,8 @@
     <string name="Certificado">Certificado</string>
     <string name="string_fp">FP</string>
     <string name="Datosdelalumno"  translatable="true">Datos del alumno</string>
+    <string name="Acepta_politica">¿Acepta nuestra politica de protección de datos?</string>
+    <string name="hint_enter_email">Añade el email</string>
 
 
 </resources>

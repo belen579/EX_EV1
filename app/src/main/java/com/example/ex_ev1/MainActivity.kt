@@ -2,6 +2,7 @@ package com.example.ex_ev1
 
 import android.content.Intent
 import android.content.res.Resources
+import android.graphics.Color
 import android.os.Bundle
 import android.provider.Settings.Global.getString
 import android.widget.Toast
@@ -10,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 import com.example.ex_ev1.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
+import java.io.Serializable
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,8 +23,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val drawable = getDrawable(R.drawable.vector)
+
+
+        binding.etUserEmail?.setCompoundDrawablesWithIntrinsicBounds(drawable,null, null, null)
 
         var nombre: String? = null
         var apellidos: String? = null
@@ -38,12 +48,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.aceptar.setOnClickListener() {
 
+            binding.aceptar.text= "Validado"
+            binding.aceptar.setBackgroundColor(Color.parseColor("#88C68B"))
+
             if (binding.fp.isChecked) {
                 formulario.nombre = binding.editTextName.text.toString()
                 formulario.apellidos = binding.apellidostext.text.toString()
                 formulario.email = binding.editTextEmail.text.toString()
                 formulario.contraseña = binding.textocon?.text.toString()
                 formulario.titulo = binding.fp.text.toString()
+                formulario = ((Formulario( formulario.nombre, formulario.apellidos,   formulario.email, formulario.contraseña, formulario.titulo)as? Formulario)!!)
 
                showalert(formulario)
 
@@ -65,6 +79,8 @@ class MainActivity : AppCompatActivity() {
 
                 formulario.titulo = binding.certificado.text.toString()
 
+                formulario = ((Formulario( formulario.nombre, formulario.apellidos,   formulario.email, formulario.contraseña, formulario.titulo)as? Formulario)!!)
+
                 showalert(formulario)
 
             /*    val intent = Intent(this, MainActivity2::class.java);
@@ -80,6 +96,8 @@ class MainActivity : AppCompatActivity() {
                 formulario.contraseña = binding.textocon?.text.toString()
 
                 formulario.titulo = binding.master.text.toString()
+
+                formulario = ((Formulario( formulario.nombre, formulario.apellidos,   formulario.email, formulario.contraseña, formulario.titulo)as? Formulario)!!)
 
                 showalert(formulario)
 
@@ -102,7 +120,7 @@ class MainActivity : AppCompatActivity() {
             binding.apellidostext.text=null
             binding.editTextEmail.text=null
             binding.textocon?.text=null
-            binding.textocontraseA2.text=null
+            binding.textocontraseA2?.text=null
 
 
             binding.certificado.isChecked= false
@@ -125,7 +143,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    data class Formulario(
+    data class Formulario (
         var nombre: String?,
         var apellidos: String?,
         var email: String?,
@@ -133,7 +151,7 @@ class MainActivity : AppCompatActivity() {
         var titulo: String?
 
 
-    ) {
+    ) :Serializable {
         override fun toString(): String {
 
 
@@ -157,7 +175,7 @@ class MainActivity : AppCompatActivity() {
 
 
             val intent = Intent(this, MainActivity2::class.java);
-            intent.putExtra("Formulario",  "Data : \n $formulario ")
+            intent.putExtra("Formulario",  formulario)
             startActivity(intent)
 
 
@@ -187,3 +205,5 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
+
+
