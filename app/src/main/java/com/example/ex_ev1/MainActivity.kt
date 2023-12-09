@@ -170,13 +170,20 @@ class MainActivity : AppCompatActivity() {
 
 
         alert.setPositiveButton(R.string.si) { dialog, which ->
-            var toast = Toast.makeText(this, R.string.Validado, Toast.LENGTH_SHORT)
-            toast.show()
+         /*   var toast = Toast.makeText(this, R.string.Validado, Toast.LENGTH_SHORT)
+            toast.show()*/
+
+            if(binding.roundUpSwitch?.isChecked==true){
+                val intent = Intent(this, MainActivity2::class.java);
+                intent.putExtra("Formulario",  formulario)
+                startActivity(intent)
+            }else{
+                var toast = Toast.makeText(this, R.string.Aceptarpolitica, Toast.LENGTH_SHORT)
+                toast.show()
+            }
 
 
-            val intent = Intent(this, MainActivity2::class.java);
-            intent.putExtra("Formulario",  formulario)
-            startActivity(intent)
+
 
 
             dialog.dismiss()

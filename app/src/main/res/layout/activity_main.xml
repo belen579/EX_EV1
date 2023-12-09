@@ -148,22 +148,14 @@
             android:layout_marginBottom="16dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/repitecontraseña"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
 
-                android:text="@string/repitecontraseña"
-                android:textSize="16sp"
-                android:layout_marginRight="20dp"
-                app:layout_constraintVertical_bias="0.5"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_user_email"
-                android:layout_width="300dp"
+                android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:text="@string/contraseña"
+                android:text="@string/repitecontraseña"
 
 
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
@@ -179,7 +171,7 @@
                     android:layout_height="wrap_content"
 
 
-                    android:hint="@string/contraseña"
+                    android:hint="@string/repitecontraseña"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout> />
         </LinearLayout>

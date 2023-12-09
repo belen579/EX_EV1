@@ -53,6 +53,7 @@
     <string name="Datosdelalumno"  translatable="true">Datos del alumno</string>
     <string name="Acepta_politica">¿Acepta nuestra politica de protección de datos?</string>
     <string name="hint_enter_email">Añade el email</string>
+    <string name="Aceptarpolitica">Debe aceptar la politica de datos</string>
 
 
 </resources>
